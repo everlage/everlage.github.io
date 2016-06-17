@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jenner Hanni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/css/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" media="screen">
+  </head>
+  <body>
+
+    <section class="page-header">
+      <h1 class="project-name"><a href="/">Jenner Hanni</a></h1>
+      <h2 class="project-tagline">Electrical engineering and occasional adventures.</h2>
+      <a href="/" class="btn">Home</a>
+      <a href="/blog" class="btn">Blog</a>
+      <a href="/projects" class="btn">Projects</a>
+      <a href="/license" class="btn">License</a>
+    </section>
+
+    <section class="main-content">
+      <nav style="width: 100%; margin-bottom: 20px; border-bottom: 1px solid #cfcfcf;">
+  
+  <div style="float:left;">&laquo; <a href="/">Front Page</a></div>
+  
+  
+  <div style="float:right;"><a href="/">Front Page</a> &raquo;</div>
+  
+  <div style="clear:both;">&nbsp;</div>
+</nav>
+
+<h1>Things</h1>
+
+Kayaking at Skamokawa on the Columbia River.
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-QD5NfNf/0/L/IMG_3325-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-qnPgjqf/0/L/IMG_3326-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-NDLXprW/0/L/IMG_3329-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-Jc7xH9K/0/L/IMG_3331-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-mQc9J7d/0/L/IMG_3333-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-hGJWW9R/0/L/IMG_3341-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-gqdjMQj/0/L/IMG_3344-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-ZQcHzBg/0/L/IMG_3356-L.jpg">
+
+I camped at Slow Boat Farms on the nearby island.
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-fNBK5pd/0/L/IMG_3380-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-SL6J5gL/0/L/IMG_3382-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-f5FJnFw/0/L/IMG_3383-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-v9BMNFX/0/L/IMG_3384-L.jpg">
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-xjFtLfQ/0/L/IMG_3385-L.jpg">
+
+Taking the ferry back to Oregon. 
+
+<img src="https://jenner.smugmug.com/Columbia-River-Kayaking/i-Jk3FtKC/0/L/IMG_3388-L.jpg">
+
+
+
+
+<div style="clear:both;">&nbsp;</div>
+<nav style="width: 100%; margin-top: 20px; padding-top: 20px; border-top: 1px solid #cfcfcf;">
+  
+  <div style="float:left;">&laquo; <a href="/">Front Page</a></div>
+  
+  
+  <div style="float:right;"><a href="/">Front Page</a> &raquo;</div>
+  
+  <div style="clear:both;">&nbsp;</div>
+</nav>
+
+
+    </section>
+
+  </body>
+</html>
