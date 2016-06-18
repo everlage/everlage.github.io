@@ -23,7 +23,12 @@ h2 { font-size: 1.5em; }
 h1 { font-size: 2em; }
 
 em { font-style: italic; }
+
+/* 2016-06-17 Erik modification*/
 strong { color: #4C787E; font-weight: bold; }
+ul li { padding: 5px 0px; }
+/* 2016-06-17 END Erik modification*/
+
 /* style and colors for header*/
 header {
 	line-height:1em;
