@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/css/style.css">
+		<link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" >
+		<title>Erik Verlage - Blog</title>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-21184326-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script type="text/javascript" src="/plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<link rel="stylesheet" href="/plugins/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="/" id="logo">Home</a></li>
+
+                </ul>
+			</nav>
+
+            <nav id="rightlist">
+                <ul vertical-align="middle">
+                    <li><a href="/publications.html">Publications</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/leaf.html">Artificial Leaf</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- 2016-06-18 Got rid of search bar -ERIK
+			<form method="GET" action="http://www.google.com/search" id="searchform">
+				<input name="q" type="search" placeholder="Search...">
+				<input name="sitesearch" type="hidden" value="hillcrestlab.com">
+			</form>
+            -->
+		</header>
+        
+
+
+		<div id="container">
+			<h1>Blog</h1>
+
+<article id="/2012/04/25/webpage-alerts-in-lines-of-code">
+<h2><a href="/2012/04/25/webpage-alerts-in-lines-of-code.html">Webpage Alerts in 10 Lines of Code</a></h2>
+<span class="date">Wed, Apr 25, 2012</span>
+<h3 id="the-problem">The Problem</h3>
+<p>Undergrad students have priority registration for upper division classes.
+Unfortunately for me, <a href="http://www.registrar.ucla.edu/schedule/subdet.aspx?srs=187510200&amp;term=12S">Programming Languages</a> was full long before
+my enrollment appointment.  Even worse, the professor informed us that
+he would be unable to give out any PTEs (special code to enroll in a class that is already at capacity)
+because of the sheer volume of students interested in enrolling.
+Usually, attending the lectures and asking is all it takes to get a PTE.</p>
+
+<h3 id="the-solution">The Solution</h3>
+<p>The <a href="http://www.registrar.ucla.edu/schedule/schedulehome.aspx">UCLA Registrar</a> publishes enrollment counts in real time. One option was
+to incessantly check the page. That’s tedious and boring. I’m lazy. I wrote a small script that uses <code class="highlighter-rouge">curl</code> to download a given page, <code class="highlighter-rouge">grep</code> to search for the word “Open”, and <code class="highlighter-rouge">mail</code> to alert me. A little-known fact is all US
+cell phone carriers have a way to send text messages from an email address.
+This happened to be beneficial because I get too much email to constantly check my inbox. Text messages to my phone will be seen by me almost instantly. The next step was to add a crontab that calls the alerter script every minute.</p>
+
+<script src="https://gist.github.com/2307166.js"> </script>
+
+<h3 id="the-result">The Result</h3>
+<p>I’m in the class :-)</p>
+
+<footer>
+<ul class="categories">
+
+<li>code</li>
+
+<li>lazy</li>
+
+<li>clever</li>
+
+<li>unix</li>
+
+<li>github</li>
+
+<li>gist</li>
+
+</ul>
+</footer>
+</article>
+
+<article id="/2012/01/07/ios-introduces-native-geocoding">
+<h2><a href="/2012/01/07/ios-introduces-native-geocoding.html">iOS 5.0 Introduces Native Geocoding</a></h2>
+<span class="date">Sat, Jan 07, 2012</span>
+<p>Last year, <a href="https://github.com/derrickj/DJGeocoder/commit/366391873b975417b6894782e0c2d6026d5a60eb">March 27, 2011</a> to be exact, I released <a href="https://github.com/derrickj/DJGeocoder">DJGeocoder</a>,
+an open source Objective-C class that allows you to cleanly geocode
+street addresses in an iOS app. I wrote it back then because <a href="/regions">Regions</a> needed it, and surprisingly, it wasn’t built into MapKit.</p>
+
+<p>Last night, I was playing around with a re-write, and discovered Apple’s <a href="http://developer.apple.com/library/ios/#documentation/CoreLocation/Reference/CLGeocoder_class/Reference/Reference.html">CLGeocoder</a>, introduced in iOS 5. I won’t be updating DJGeocoder. It is still useful if you need to support iOS versions prior to iOS 5. Otherwise, just use the newly introduced native API.</p>
+
+<footer>
+<ul class="categories">
+
+<li>development</li>
+
+<li>code</li>
+
+<li>opensource</li>
+
+</ul>
+</footer>
+</article>
+
+<article id="/2011/12/20/e-greeting-cards-is-available">
+<h2><a href="/2011/12/20/e-greeting-cards-is-available.html">e-Greeting Cards is Available</a></h2>
+<span class="date">Tue, Dec 20, 2011</span>
+<p><a href="http://itunes.apple.com/us/app/e-greeting-cards/id470336073?ls=1&amp;mt=8">e-Greeting Cards 1.1</a> is available in the app store! I’ve made a <a href="http://www.egreetingsapp.com/">promo site</a> for it was well. There, you can find a <a href="http://www.egreetingsapp.com/#video">demo video</a> to see how it works. The content layout adapts to screen sizes. So wether you’re on a desktop, mobile phone, or anything in between, it should look great.</p>
+
+<footer>
+<ul class="categories">
+
+</ul>
+</footer>
+</article>
+
+<article id="/2011/11/16/accepting-egreeting-cards-beta-testers">
+<h2><a href="/2011/11/16/accepting-egreeting-cards-beta-testers.html">Accepting e-Greeting Cards Beta Testers</a></h2>
+<span class="date">Wed, Nov 16, 2011</span>
+<p>e-Greeting cards allows you to send personalized electronic greeting cards to the people you care about. It will be released soon. <a href="https://testflightapp.com/join/408c78e8819e1427cacdef37f079159b-MTc0MzU/">Sign up for the beta</a> if you’re interested in checking it out before it get’s released.</p>
+
+<p>Somehow, I forgot to post this to the blog. I <a href="https://twitter.com/#!/derricck/status/121748403926478848">tweeted</a> about it 4 months ago though. I don’t think the readership is particularly high, but I definitely should have posted here.</p>
+
+<p>P.S. I started working on this <em>before</em> Apple announced it’s own <a href="http://www.apple.com/iphone/from-the-app-store/apps-by-apple/cards.html">Cards app</a>. Since my app was almost done before the announcement, and they send printed cards, I decided not to scrap the project all together. Needless to say, this should be interesting.</p>
+
+<footer>
+<ul class="categories">
+
+</ul>
+</footer>
+</article>
+
+<article id="/2011/06/18/calloway-1.2-is-here">
+<h2><a href="/2011/06/18/calloway-1.2-is-here.html">Calloway 1.2 is Here</a></h2>
+<span class="date">Sat, Jun 18, 2011</span>
+<div><img src="/resources/images/calloway-screen.png" alt="calloway screenshot" /></div>
+<p>What’s New:</p>
+
+<ul>
+  <li>Block icons from @PT_Callway instead of @Mr_Calloway (he changed his name)</li>
+  <li>No longer need to block South by Southwest tweets</li>
+  <li>Use CSS instead of JavaScript to block (should be more efficient)</li>
+</ul>
+
+<p><a href="/resources/calloway.safariextz">Download the Calloway extension</a>.</p>
+
+<p><a href="https://github.com/derrickj/calloway.safariextension">View the code on Github</a>.</p>
+
+<footer>
+<ul class="categories">
+
+</ul>
+</footer>
+</article>
+
+<article id="/2011/06/06/how-ios5-affects-regions">
+<h2><a href="/2011/06/06/how-ios5-affects-regions.html">How iOS 5 Affects Regions</a></h2>
+<span class="date">Mon, Jun 06, 2011</span>
+<h3 id="ios-5-probably-just-made-my-app-pointless">iOS 5 probably just made my app pointless.</h3>
+
+<p>I started working on <a href="http://itunes.com/app/regions">Regions</a> in my free time as soon
+as iOS 4.0 brought new background location APIs to the table. The app has had
+a few issues.
+The most glaring problem was that any iOS device could download it from the app store,
+even though it is only available for iPhone 4.
+I’m almost done with finals, so I was planning on doing the following this summer:</p>
+
+<ol>
+  <li>Refining the User Interface to make some of the features more obvious</li>
+  <li>Re-releasing Regions under a new name (the only way to fix the app store availability problem)</li>
+</ol>
+
+<p>I didn’t want to promote my app without completing these two steps.</p>
+
+<p>I decided  to check out the <a href="http://developer.apple.com/wwdc/about/">WWDC</a> news, and found out that built-in location based
+reminders would be included in the next major release of iOS. Naturally, <a href="https://twitter.com/derricck/status/77814397338255362">I was slightly upset</a>;
+But not as much as my friends thought I would be. I understand that this
+sort of thing happens all the time. Regions was not the only app in its category.
+What it provides is a very useful, so it makes sense that many other people would
+want to provide the same feature. Why would Apple be any different?</p>
+
+<p>Another example of this is the <a href="http://www.engadget.com/2011/06/06/apple-adds-camera-shortcut-to-lock-screen-volume-up-shutter-key/">volume shutter feature</a> in Camera+ that was <a href="http://taptaptap.com/blog/cameraplus-volumesnap-rejected/">rejected last year</a>. Yet another example of an idea that is on one
+hand very clever, but is also bound to be thought of by multiple people.</p>
+
+<p>Today, I finally received a response (under NDA of course) about my
+<a href="/2010/12/17/improving-regions.html">bug report</a>. There is some good news to
+take out of this. The built-in support should be awesome. I’ve always wanted
+this feature, and now everyone else will get it as well.</p>
+
+<p>Regarding built-in features cannibalizing special apps, there
+is a small chance that this will increase demand for my app.
+Marco Arment has <a href="http://www.marco.org/2011/06/06/safari-reader-and-instapaper">a post explaining why</a> that may be the case for Instapaper.</p>
+
+<h3 id="what-does-this-mean-for-regions">What does this mean for Regions?</h3>
+
+<p>It means that I probably won’t be updating it over the summer. I’ll wait and see
+how the feature turns out when I start using iOS 5. I only have one iPhone 4, which
+I use as my personal phone, so I don’t install iOS betas on it.
+If there ends up being an opportunity for Regions to fill a niche, then
+I will reconsider actively developing it. People that want to
+have location based reminders before iOS 5 gets released this Fall
+can <a href="http://itunes.com/app/regions">download Regions from the app store now</a>.</p>
+
+<footer>
+<ul class="categories">
+
+</ul>
+</footer>
+</article>
+
+<article id="/2011/03/14/calloway-1.1-is-here">
+<h2><a href="/2011/03/14/calloway-1.1-is-here.html">Calloway 1.1 Is Here</a></h2>
+<span class="date">Mon, Mar 14, 2011</span>
+<p>If you are not at <a href="http://sxsw.com/">South By Southwest</a>, this is about the time where you entire twitter timeline reminds you of it. If you don’t to want to see all those #SXSW tweets, then Calloway 1.1 is just for you. <a href="http://hillcrestlab.com/resources/calloway.safariextz">Download and install this Safari Extension</a>, and you won’t see any tweets containing “sxsw”, or “SXSW”, or “SxSW” (you get the idea).</p>
+
+<footer>
+<ul class="categories">
+
+</ul>
+</footer>
+</article>
+
+<article id="/2011/03/03/first-testflight-beta">
+<h2><a href="/2011/03/03/first-testflight-beta.html">First Testflight Beta</a></h2>
+<span class="date">Thu, Mar 03, 2011</span>
+<p>Despite me being extremely busy with finals coming around the corner and volunteering, I had an urge to push out a beta build of <a href="http://itunes.apple.com/us/app/regions/id392441093">Regions</a> to the people that signed up at <a href="http://testflightapp.com/">TestFlight</a>. As I said before, I dumped out all my old code, which meant dumping out a lot of features when I started from the Apple example code. One of the simple (and essential) functions was playing a sound in addition to the pop-up alert when you receive a reminder. I noticed the lack of sound several times while on my bus. It got the job done for me since I was staring at my phone anyway, but this was obviously a short-coming.</p>
+
+<p>Since I don’t have time to do a more substantial update, this is a nice excuse for me to checkout how pushing out updates via Testflight is. I can safely describe it as a cross between awesome and beautiful. If you’d like to try out new features before they are released to the app store, <a href="http://testflightapp.com/join/58ec4b848be2c155c68078d6cf4d1809-MTA3OA/">sign up to be a beta tester</a>.</p>
+
+<footer>
+<ul class="categories">
+
+</ul>
+</footer>
+</article>
+
+<article id="/2011/02/22/social-icon-set">
+<h2><a href="/2011/02/22/social-icon-set.html">Social Icon Set</a></h2>
+<span class="date">Tue, Feb 22, 2011</span>
+<p>There’s a quite a things that remain undone on my site. Until now, I wasn’t happy with how my contact info was presented. It almost feels like something is missing if there aren’t links to a few (or dozen) social networking sites. I did a quick search, and found some that I really liked from <a href="http://www.komodomedia.com">http://www.komodomedia.com</a>. They are free of charge. They only ask that you link back to their site if you used them. Pretty awesome.</p>
+
+
+<footer>
+<ul class="categories">
+
+</ul>
+</footer>
+</article>
+
+<article id="/2011/01/24/accepting-regions-beta-testers">
+<h2><a href="/2011/01/24/accepting-regions-beta-testers.html">Accepting Regions Beta Testers</a></h2>
+<span class="date">Mon, Jan 24, 2011</span>
+<p>In an <a href="/2011/01/03/regions-soft-relaunch.html">earlier post</a>, I mentioned how it looked like <a href="http://www.testflightapp.com">TestFlight</a> would be taking a lot of pain out of running beta tests. They are already off to a great start. I’ll be adding some new features to <a href="http://itunes.apple.com/us/app/regions/id392441093">Regions</a>, and I would love to get them in the hands of users before it gets to the app store.</p>
+
+<p>If you’d like to try it out, <a href="http://testflightapp.com/join/58ec4b848be2c155c68078d6cf4d1809-MTA3OA/">sign up to be a beta tester!</a>.</p>
+
+<footer>
+<ul class="categories">
+
+</ul>
+</footer>
+</article>
+
+
+<div id="next"><a href="/archive.html">Archive</a></div>
+
+		</div>
+		
+
+
+	</body>
+</html>

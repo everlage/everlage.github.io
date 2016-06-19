@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hillcrest Lab Blog</title>
+  <link href="http://www.hillcrestlab.com/blog/atom.xml" rel="self"/>
+  <link href="http://www.hillcrestlab.com"/>
+  <updated>2016-06-18T18:12:18-07:00</updated>
+  <id>http://www.hillcrestlab.com/blog</id>
+  <author>
+    <name>Derrick Jones</name>
+  </author>
+  
+    <entry>
+      <title>Webpage Alerts in 10 Lines of Code</title>
+      <link href="http://www.hillcrestlab.com/2012/04/25/webpage-alerts-in-lines-of-code.html"/>
+      <updated>2012-04-25T15:57:09-07:00</updated>
+      <id>http://www.hillcrestlab.com/2012/04/25/webpage-alerts-in-lines-of-code</id>
+      <content type="html">&lt;h3 id=&quot;the-problem&quot;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Undergrad students have priority registration for upper division classes.
+Unfortunately for me, &lt;a href=&quot;http://www.registrar.ucla.edu/schedule/subdet.aspx?srs=187510200&amp;amp;term=12S&quot;&gt;Programming Languages&lt;/a&gt; was full long before
+my enrollment appointment.  Even worse, the professor informed us that
+he would be unable to give out any PTEs (special code to enroll in a class that is already at capacity)
+because of the sheer volume of students interested in enrolling.
+Usually, attending the lectures and asking is all it takes to get a PTE.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-solution&quot;&gt;The Solution&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.registrar.ucla.edu/schedule/schedulehome.aspx&quot;&gt;UCLA Registrar&lt;/a&gt; publishes enrollment counts in real time. One option was
+to incessantly check the page. That’s tedious and boring. I’m lazy. I wrote a small script that uses &lt;code class=&quot;highlighter-rouge&quot;&gt;curl&lt;/code&gt; to download a given page, &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; to search for the word “Open”, and &lt;code class=&quot;highlighter-rouge&quot;&gt;mail&lt;/code&gt; to alert me. A little-known fact is all US
+cell phone carriers have a way to send text messages from an email address.
+This happened to be beneficial because I get too much email to constantly check my inbox. Text messages to my phone will be seen by me almost instantly. The next step was to add a crontab that calls the alerter script every minute.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/2307166.js&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;the-result&quot;&gt;The Result&lt;/h3&gt;
+&lt;p&gt;I’m in the class :-)&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>iOS 5.0 Introduces Native Geocoding</title>
+      <link href="http://www.hillcrestlab.com/2012/01/07/ios-introduces-native-geocoding.html"/>
+      <updated>2012-01-07T07:44:39-08:00</updated>
+      <id>http://www.hillcrestlab.com/2012/01/07/ios-introduces-native-geocoding</id>
+      <content type="html">&lt;p&gt;Last year, &lt;a href=&quot;https://github.com/derrickj/DJGeocoder/commit/366391873b975417b6894782e0c2d6026d5a60eb&quot;&gt;March 27, 2011&lt;/a&gt; to be exact, I released &lt;a href=&quot;https://github.com/derrickj/DJGeocoder&quot;&gt;DJGeocoder&lt;/a&gt;,
+an open source Objective-C class that allows you to cleanly geocode
+street addresses in an iOS app. I wrote it back then because &lt;a href=&quot;/regions&quot;&gt;Regions&lt;/a&gt; needed it, and surprisingly, it wasn’t built into MapKit.&lt;/p&gt;
+
+&lt;p&gt;Last night, I was playing around with a re-write, and discovered Apple’s &lt;a href=&quot;http://developer.apple.com/library/ios/#documentation/CoreLocation/Reference/CLGeocoder_class/Reference/Reference.html&quot;&gt;CLGeocoder&lt;/a&gt;, introduced in iOS 5. I won’t be updating DJGeocoder. It is still useful if you need to support iOS versions prior to iOS 5. Otherwise, just use the newly introduced native API.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>e-Greeting Cards is Available</title>
+      <link href="http://www.hillcrestlab.com/2011/12/20/e-greeting-cards-is-available.html"/>
+      <updated>2011-12-20T14:06:36-08:00</updated>
+      <id>http://www.hillcrestlab.com/2011/12/20/e-greeting-cards-is-available</id>
+      <content type="html">&lt;p&gt;&lt;a href=&quot;http://itunes.apple.com/us/app/e-greeting-cards/id470336073?ls=1&amp;amp;mt=8&quot;&gt;e-Greeting Cards 1.1&lt;/a&gt; is available in the app store! I’ve made a &lt;a href=&quot;http://www.egreetingsapp.com/&quot;&gt;promo site&lt;/a&gt; for it was well. There, you can find a &lt;a href=&quot;http://www.egreetingsapp.com/#video&quot;&gt;demo video&lt;/a&gt; to see how it works. The content layout adapts to screen sizes. So wether you’re on a desktop, mobile phone, or anything in between, it should look great.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>Accepting e-Greeting Cards Beta Testers</title>
+      <link href="http://www.hillcrestlab.com/2011/11/16/accepting-egreeting-cards-beta-testers.html"/>
+      <updated>2011-11-16T05:50:00-08:00</updated>
+      <id>http://www.hillcrestlab.com/2011/11/16/accepting-egreeting-cards-beta-testers</id>
+      <content type="html">&lt;p&gt;e-Greeting cards allows you to send personalized electronic greeting cards to the people you care about. It will be released soon. &lt;a href=&quot;https://testflightapp.com/join/408c78e8819e1427cacdef37f079159b-MTc0MzU/&quot;&gt;Sign up for the beta&lt;/a&gt; if you’re interested in checking it out before it get’s released.&lt;/p&gt;
+
+&lt;p&gt;Somehow, I forgot to post this to the blog. I &lt;a href=&quot;https://twitter.com/#!/derricck/status/121748403926478848&quot;&gt;tweeted&lt;/a&gt; about it 4 months ago though. I don’t think the readership is particularly high, but I definitely should have posted here.&lt;/p&gt;
+
+&lt;p&gt;P.S. I started working on this &lt;em&gt;before&lt;/em&gt; Apple announced it’s own &lt;a href=&quot;http://www.apple.com/iphone/from-the-app-store/apps-by-apple/cards.html&quot;&gt;Cards app&lt;/a&gt;. Since my app was almost done before the announcement, and they send printed cards, I decided not to scrap the project all together. Needless to say, this should be interesting.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>Calloway 1.2 is Here</title>
+      <link href="http://www.hillcrestlab.com/2011/06/18/calloway-1.2-is-here.html"/>
+      <updated>2011-06-18T05:25:00-07:00</updated>
+      <id>http://www.hillcrestlab.com/2011/06/18/calloway-1.2-is-here</id>
+      <content type="html">&lt;div&gt;&lt;img src=&quot;/resources/images/calloway-screen.png&quot; alt=&quot;calloway screenshot&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;What’s New:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Block icons from @PT_Callway instead of @Mr_Calloway (he changed his name)&lt;/li&gt;
+  &lt;li&gt;No longer need to block South by Southwest tweets&lt;/li&gt;
+  &lt;li&gt;Use CSS instead of JavaScript to block (should be more efficient)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;/resources/calloway.safariextz&quot;&gt;Download the Calloway extension&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/derrickj/calloway.safariextension&quot;&gt;View the code on Github&lt;/a&gt;.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>How iOS 5 Affects Regions</title>
+      <link href="http://www.hillcrestlab.com/2011/06/06/how-ios5-affects-regions.html"/>
+      <updated>2011-06-06T10:56:00-07:00</updated>
+      <id>http://www.hillcrestlab.com/2011/06/06/how-ios5-affects-regions</id>
+      <content type="html">&lt;h3 id=&quot;ios-5-probably-just-made-my-app-pointless&quot;&gt;iOS 5 probably just made my app pointless.&lt;/h3&gt;
+
+&lt;p&gt;I started working on &lt;a href=&quot;http://itunes.com/app/regions&quot;&gt;Regions&lt;/a&gt; in my free time as soon
+as iOS 4.0 brought new background location APIs to the table. The app has had
+a few issues.
+The most glaring problem was that any iOS device could download it from the app store,
+even though it is only available for iPhone 4.
+I’m almost done with finals, so I was planning on doing the following this summer:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Refining the User Interface to make some of the features more obvious&lt;/li&gt;
+  &lt;li&gt;Re-releasing Regions under a new name (the only way to fix the app store availability problem)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I didn’t want to promote my app without completing these two steps.&lt;/p&gt;
+
+&lt;p&gt;I decided  to check out the &lt;a href=&quot;http://developer.apple.com/wwdc/about/&quot;&gt;WWDC&lt;/a&gt; news, and found out that built-in location based
+reminders would be included in the next major release of iOS. Naturally, &lt;a href=&quot;https://twitter.com/derricck/status/77814397338255362&quot;&gt;I was slightly upset&lt;/a&gt;;
+But not as much as my friends thought I would be. I understand that this
+sort of thing happens all the time. Regions was not the only app in its category.
+What it provides is a very useful, so it makes sense that many other people would
+want to provide the same feature. Why would Apple be any different?&lt;/p&gt;
+
+&lt;p&gt;Another example of this is the &lt;a href=&quot;http://www.engadget.com/2011/06/06/apple-adds-camera-shortcut-to-lock-screen-volume-up-shutter-key/&quot;&gt;volume shutter feature&lt;/a&gt; in Camera+ that was &lt;a href=&quot;http://taptaptap.com/blog/cameraplus-volumesnap-rejected/&quot;&gt;rejected last year&lt;/a&gt;. Yet another example of an idea that is on one
+hand very clever, but is also bound to be thought of by multiple people.&lt;/p&gt;
+
+&lt;p&gt;Today, I finally received a response (under NDA of course) about my
+&lt;a href=&quot;/2010/12/17/improving-regions.html&quot;&gt;bug report&lt;/a&gt;. There is some good news to
+take out of this. The built-in support should be awesome. I’ve always wanted
+this feature, and now everyone else will get it as well.&lt;/p&gt;
+
+&lt;p&gt;Regarding built-in features cannibalizing special apps, there
+is a small chance that this will increase demand for my app.
+Marco Arment has &lt;a href=&quot;http://www.marco.org/2011/06/06/safari-reader-and-instapaper&quot;&gt;a post explaining why&lt;/a&gt; that may be the case for Instapaper.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-does-this-mean-for-regions&quot;&gt;What does this mean for Regions?&lt;/h3&gt;
+
+&lt;p&gt;It means that I probably won’t be updating it over the summer. I’ll wait and see
+how the feature turns out when I start using iOS 5. I only have one iPhone 4, which
+I use as my personal phone, so I don’t install iOS betas on it.
+If there ends up being an opportunity for Regions to fill a niche, then
+I will reconsider actively developing it. People that want to
+have location based reminders before iOS 5 gets released this Fall
+can &lt;a href=&quot;http://itunes.com/app/regions&quot;&gt;download Regions from the app store now&lt;/a&gt;.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>Calloway 1.1 Is Here</title>
+      <link href="http://www.hillcrestlab.com/2011/03/14/calloway-1.1-is-here.html"/>
+      <updated>2011-03-14T01:20:00-07:00</updated>
+      <id>http://www.hillcrestlab.com/2011/03/14/calloway-1.1-is-here</id>
+      <content type="html">&lt;p&gt;If you are not at &lt;a href=&quot;http://sxsw.com/&quot;&gt;South By Southwest&lt;/a&gt;, this is about the time where you entire twitter timeline reminds you of it. If you don’t to want to see all those #SXSW tweets, then Calloway 1.1 is just for you. &lt;a href=&quot;http://hillcrestlab.com/resources/calloway.safariextz&quot;&gt;Download and install this Safari Extension&lt;/a&gt;, and you won’t see any tweets containing “sxsw”, or “SXSW”, or “SxSW” (you get the idea).&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>First Testflight Beta</title>
+      <link href="http://www.hillcrestlab.com/2011/03/03/first-testflight-beta.html"/>
+      <updated>2011-03-03T17:51:00-08:00</updated>
+      <id>http://www.hillcrestlab.com/2011/03/03/first-testflight-beta</id>
+      <content type="html">&lt;p&gt;Despite me being extremely busy with finals coming around the corner and volunteering, I had an urge to push out a beta build of &lt;a href=&quot;http://itunes.apple.com/us/app/regions/id392441093&quot;&gt;Regions&lt;/a&gt; to the people that signed up at &lt;a href=&quot;http://testflightapp.com/&quot;&gt;TestFlight&lt;/a&gt;. As I said before, I dumped out all my old code, which meant dumping out a lot of features when I started from the Apple example code. One of the simple (and essential) functions was playing a sound in addition to the pop-up alert when you receive a reminder. I noticed the lack of sound several times while on my bus. It got the job done for me since I was staring at my phone anyway, but this was obviously a short-coming.&lt;/p&gt;
+
+&lt;p&gt;Since I don’t have time to do a more substantial update, this is a nice excuse for me to checkout how pushing out updates via Testflight is. I can safely describe it as a cross between awesome and beautiful. If you’d like to try out new features before they are released to the app store, &lt;a href=&quot;http://testflightapp.com/join/58ec4b848be2c155c68078d6cf4d1809-MTA3OA/&quot;&gt;sign up to be a beta tester&lt;/a&gt;.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>Social Icon Set</title>
+      <link href="http://www.hillcrestlab.com/2011/02/22/social-icon-set.html"/>
+      <updated>2011-02-22T17:12:00-08:00</updated>
+      <id>http://www.hillcrestlab.com/2011/02/22/social-icon-set</id>
+      <content type="html">&lt;p&gt;There’s a quite a things that remain undone on my site. Until now, I wasn’t happy with how my contact info was presented. It almost feels like something is missing if there aren’t links to a few (or dozen) social networking sites. I did a quick search, and found some that I really liked from &lt;a href=&quot;http://www.komodomedia.com&quot;&gt;http://www.komodomedia.com&lt;/a&gt;. They are free of charge. They only ask that you link back to their site if you used them. Pretty awesome.&lt;/p&gt;
+
+</content>
+    </entry>
+  
+    <entry>
+      <title>Accepting Regions Beta Testers</title>
+      <link href="http://www.hillcrestlab.com/2011/01/24/accepting-regions-beta-testers.html"/>
+      <updated>2011-01-24T11:42:00-08:00</updated>
+      <id>http://www.hillcrestlab.com/2011/01/24/accepting-regions-beta-testers</id>
+      <content type="html">&lt;p&gt;In an &lt;a href=&quot;/2011/01/03/regions-soft-relaunch.html&quot;&gt;earlier post&lt;/a&gt;, I mentioned how it looked like &lt;a href=&quot;http://www.testflightapp.com&quot;&gt;TestFlight&lt;/a&gt; would be taking a lot of pain out of running beta tests. They are already off to a great start. I’ll be adding some new features to &lt;a href=&quot;http://itunes.apple.com/us/app/regions/id392441093&quot;&gt;Regions&lt;/a&gt;, and I would love to get them in the hands of users before it gets to the app store.&lt;/p&gt;
+
+&lt;p&gt;If you’d like to try it out, &lt;a href=&quot;http://testflightapp.com/join/58ec4b848be2c155c68078d6cf4d1809-MTA3OA/&quot;&gt;sign up to be a beta tester!&lt;/a&gt;.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>Regions Soft Relaunch</title>
+      <link href="http://www.hillcrestlab.com/2011/01/02/regions-soft-relaunch.html"/>
+      <updated>2011-01-02T16:11:00-08:00</updated>
+      <id>http://www.hillcrestlab.com/2011/01/02/regions-soft-relaunch</id>
+      <content type="html">&lt;p&gt;As stated in the previous post, I pulled Regions from the app store.  I can’t go into as much detail as I want because I’m pressed for time. I start school tomorrow, so I’ll likely be buried in work until spring break. This is meant to give brief account of what is going on.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-code-sucked-it-didnt-work&quot;&gt;My code sucked, it didn’t work.&lt;/h3&gt;
+&lt;p&gt;There were numerous people complaining online about Location Services being broken in iOS 4.1. Although there may be problems that Apple needs to address, they are unrelated to the problems that Regions 1.0 had.
+The sample code from WWDC &lt;em&gt;does&lt;/em&gt; work. The user interface is better. I removed a lot from my app’s workflow before it was finally released, but the WWDC code was even &lt;em&gt;simpler&lt;/em&gt;. Regions is back, and it uses the WWDC code instead of my own.&lt;/p&gt;
+
+&lt;h3 id=&quot;better-testing&quot;&gt;Better Testing&lt;/h3&gt;
+&lt;p&gt;I’d like to get feedback before expending a ton of energy promoting it. I don’t want to make the same mistake as last time(i.e. having zero beta testers). The standard procedure for beta testing on iOS is a &lt;em&gt;big headache&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Each tester has to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Connect their phone to iTunes.&lt;/li&gt;
+  &lt;li&gt;Find and e-mail me their UDID.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Then I have to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Enter each UDID into the iOS developer portal.&lt;/li&gt;
+  &lt;li&gt;Generate a mobile provisioning profile for the group.&lt;/li&gt;
+  &lt;li&gt;Build the app and bundle it with the provisioning profile.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After I’ve sent the .zip file the tester has to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install the mobile provisioning profile.&lt;/li&gt;
+  &lt;li&gt;Drag the app into itunes.&lt;/li&gt;
+  &lt;li&gt;Sync his or her iPhone.&lt;/li&gt;
+  &lt;li&gt;Pray that the app showed up.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://testflightapp.com/&quot;&gt;TestFlight&lt;/a&gt; seem’s like it’s going to take most of this pain away. I got into their private beta thanks to their &lt;a href=&quot;http://twitter.com/#!/testflightapp/status/21231076617748480&quot;&gt;New Years gift&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;soft-relaunch&quot;&gt;Soft Relaunch&lt;/h3&gt;
+&lt;p&gt;Last time, I gave anyone that wanted it a promo code to download Regions for free. This can be a pain too. I don’t want to put extra steps in the way of people that can give me feedback. So until Friday, January 7, 2011, &lt;a href=&quot;http://itunes.apple.com/us/app/regions/id392441093&quot;&gt;regions is free in the app store&lt;/a&gt;. When it’s not free, I’ll still give out promo codes when I can.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>Improving Regions</title>
+      <link href="http://www.hillcrestlab.com/2010/12/17/improving-regions.html"/>
+      <updated>2010-12-17T14:25:10-08:00</updated>
+      <id>http://www.hillcrestlab.com/2010/12/17/improving-regions</id>
+      <content type="html">&lt;p&gt;I submitted Regions a little before I started school. Due to some &lt;a href=&quot;http://openradar.appspot.com/8351167&quot;&gt;bugs&lt;/a&gt; in the Region Monitoring API, and my lack of thorough testing on iOS 4.1, it was unreliable. I wasn’t able to work on it during school, and didn’t want to delete my App and risk losing the name. I resorted to posting a message in the description that basically said, “Please don’t download this.”&lt;/p&gt;
+
+&lt;p&gt;While listening to &lt;a href=&quot;http://5by5.tv/buildanalyze/5&quot;&gt;Build and Analyze&lt;/a&gt; I found that it is possible to pull your app without deleting it. This is done by setting he availability date to some time in the future. Regions will not return to the store until it’s ready. If you’d like to do some beta testing, &lt;a href=&quot;http://www.hillcrestlab.com/redmine/account/register&quot;&gt;create an account&lt;/a&gt;. If you don’t get a response within a few days, &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#058;&amp;#100;&amp;#101;&amp;#114;&amp;#114;&amp;#105;&amp;#099;&amp;#107;&amp;#064;&amp;#104;&amp;#105;&amp;#108;&amp;#108;&amp;#099;&amp;#114;&amp;#101;&amp;#115;&amp;#116;&amp;#108;&amp;#097;&amp;#098;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;send me an e-mail&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+    </entry>
+  
+    <entry>
+      <title>Calloway Safari Extension</title>
+      <link href="http://www.hillcrestlab.com/2010/12/04/calloway-safari-extension.html"/>
+      <updated>2010-12-04T00:00:00-08:00</updated>
+      <id>http://www.hillcrestlab.com/2010/12/04/calloway-safari-extension</id>
+      <content type="html">&lt;p&gt;I made a safari extension that blocks one of my buddy’s twitter icons. I’m not providing a link to his page because you’d click on it, and &lt;em&gt;truly&lt;/em&gt; understand why I made this. I don’t want to do that to you. There’s certain things you can’t unsee; So just trust me: You &lt;strong&gt;do not&lt;/strong&gt; want to see his icons.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/resources/calloway.safariextz&quot;&gt;Download Calloway 1.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;future&quot;&gt;Future&lt;/h3&gt;
+
+&lt;p&gt;I might add other features. The most important thing was to block his images! The code is on &lt;a href=&quot;https://github.com/derrickj/calloway.safariextension&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>Regions Available World Wide</title>
+      <link href="http://www.hillcrestlab.com/2010/10/08/regions-available-world-wide.html"/>
+      <updated>2010-10-08T00:00:00-07:00</updated>
+      <id>http://www.hillcrestlab.com/2010/10/08/regions-available-world-wide</id>
+      <content type="html">&lt;p&gt;As I’ve stated, there was very little rationale behind making Regions US only. A few people outside the US are interested, so why not? I’ve made the change in iTunes Connect, so it should go live everywhere within 24-48 hours.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>Regions Approved By Apple</title>
+      <link href="http://www.hillcrestlab.com/2010/10/04/regions-approved-by-apple.html"/>
+      <updated>2010-10-04T00:00:00-07:00</updated>
+      <id>http://www.hillcrestlab.com/2010/10/04/regions-approved-by-apple</id>
+      <content type="html">&lt;p&gt;Regions has been approved by Apple. It’s available in the &lt;a href=&quot;http://itunes.apple.com/us/app/regions/id392441093?mt=8&quot;&gt;App Store&lt;/a&gt; now. I’m excited. You should be too. Go check it out!&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>iphone-geospoof</title>
+      <link href="http://www.hillcrestlab.com/2010/10/04/iphone-geospoof.html"/>
+      <updated>2010-10-04T00:00:00-07:00</updated>
+      <id>http://www.hillcrestlab.com/2010/10/04/iphone-geospoof</id>
+      <content type="html">&lt;h3 id=&quot;test-location-based-code-on-the-iphone-simulator&quot;&gt;Test Location Based Code on the iPhone Simulator&lt;/h3&gt;
+
+&lt;p&gt;We all know the iPhone simulator is all but useless for testing location based code. To remedy this, I’ve created a simple simple Objective-C category that you can use to simulate location changes. It’s not over engineered. You don’t have to go figure out a weird file format then edit that file to get it to work. Just program your routes.&lt;/p&gt;
+
+&lt;p&gt;The code is on &lt;a href=&quot;http://github.com/derrickj/iphone-geospoof/&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+</content>
+    </entry>
+  
+    <entry>
+      <title>Regions 1.0 for iPhone Submitted for App Store Approval</title>
+      <link href="http://www.hillcrestlab.com/2010/09/26/regions-1.0-for-iphone-submitted-for-app-store-approval.html"/>
+      <updated>2010-09-26T00:00:00-07:00</updated>
+      <id>http://www.hillcrestlab.com/2010/09/26/regions-1.0-for-iphone-submitted-for-app-store-approval</id>
+      <content type="html">&lt;p&gt;Title says it all. Let’s see how long this takes. I recommend following the instructions for setting up a distribution profile in XCode precisely. Saving the instructions as a PDF produced a whopping 17 pages! Figuring out which of the 20-30 steps you missed after your app signing fails is not fun.&lt;/p&gt;
+
+&lt;p&gt;I still haven’t received a response from Apple regarding what looks like a bug. For now, I have to limit the number of location based reminders that can be set. Who knows how long I’ll have to wait for this issue to be addressed. I felt like I needed to go ahead and get 1.0 in the store so people can check it out.&lt;/p&gt;
+</content>
+    </entry>
+  
+</feed>

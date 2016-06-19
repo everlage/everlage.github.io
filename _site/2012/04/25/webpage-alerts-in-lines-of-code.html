@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/css/style.css">
+		<link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" >
+		<title>Erik Verlage - Webpage Alerts in 10 Lines of Code</title>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-21184326-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script type="text/javascript" src="/plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<link rel="stylesheet" href="/plugins/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="/" id="logo">Home</a></li>
+
+                </ul>
+			</nav>
+
+            <nav id="rightlist">
+                <ul vertical-align="middle">
+                    <li><a href="/publications.html">Publications</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/leaf.html">Artificial Leaf</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- 2016-06-18 Got rid of search bar -ERIK
+			<form method="GET" action="http://www.google.com/search" id="searchform">
+				<input name="q" type="search" placeholder="Search...">
+				<input name="sitesearch" type="hidden" value="hillcrestlab.com">
+			</form>
+            -->
+		</header>
+        
+
+
+		<div id="container">
+			<article id="/2012/04/25/webpage-alerts-in-lines-of-code">
+<h1><a href="/2012/04/25/webpage-alerts-in-lines-of-code.html">Webpage Alerts in 10 Lines of Code</a></h1>
+<span class="date">Wed, Apr 25, 2012</span>
+<h3 id="the-problem">The Problem</h3>
+<p>Undergrad students have priority registration for upper division classes.
+Unfortunately for me, <a href="http://www.registrar.ucla.edu/schedule/subdet.aspx?srs=187510200&amp;term=12S">Programming Languages</a> was full long before
+my enrollment appointment.  Even worse, the professor informed us that
+he would be unable to give out any PTEs (special code to enroll in a class that is already at capacity)
+because of the sheer volume of students interested in enrolling.
+Usually, attending the lectures and asking is all it takes to get a PTE.</p>
+
+<h3 id="the-solution">The Solution</h3>
+<p>The <a href="http://www.registrar.ucla.edu/schedule/schedulehome.aspx">UCLA Registrar</a> publishes enrollment counts in real time. One option was
+to incessantly check the page. That’s tedious and boring. I’m lazy. I wrote a small script that uses <code class="highlighter-rouge">curl</code> to download a given page, <code class="highlighter-rouge">grep</code> to search for the word “Open”, and <code class="highlighter-rouge">mail</code> to alert me. A little-known fact is all US
+cell phone carriers have a way to send text messages from an email address.
+This happened to be beneficial because I get too much email to constantly check my inbox. Text messages to my phone will be seen by me almost instantly. The next step was to add a crontab that calls the alerter script every minute.</p>
+
+<script src="https://gist.github.com/2307166.js"> </script>
+
+<h3 id="the-result">The Result</h3>
+<p>I’m in the class :-)</p>
+
+<footer>
+<ul class="categories">
+
+<li>code</li>
+
+<li>lazy</li>
+
+<li>clever</li>
+
+<li>unix</li>
+
+<li>github</li>
+
+<li>gist</li>
+
+</ul>
+</footer>
+</article>
+
+		</div>
+		
+
+
+	</body>
+</html>

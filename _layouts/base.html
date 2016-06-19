@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="/css/style.css">
 		<link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" >
-		<title>Hillcrest Lab - {{ page.title }}</title>
+		<title>Erik Verlage - {{ page.title }}</title>
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];
@@ -28,20 +28,34 @@
 			<nav>
 				<ul>
 					<li><a href="/" id="logo">Home</a></li>
-                    <li><a href="/publications.html">Publications</a></li>
-					<li><a href="/projects.html">Projects</a></li>
-					<li><a href="/about.html">About</a></li>
-					<li><a href="/contact.html">Contact</a></li>
-				</ul>
+
+                </ul>
 			</nav>
+
+            <nav id="rightlist">
+                <ul vertical-align="middle">
+                    <li><a href="/publications.html">Publications</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/leaf.html">Artificial Leaf</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- 2016-06-18 Got rid of search bar -ERIK
 			<form method="GET" action="http://www.google.com/search" id="searchform">
 				<input name="q" type="search" placeholder="Search...">
 				<input name="sitesearch" type="hidden" value="hillcrestlab.com">
 			</form>
+            -->
 		</header>
+        
+
+
 		<div id="container">
 			{{ content }}
 		</div>
 		
+
+
 	</body>
 </html>
