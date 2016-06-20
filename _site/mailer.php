@@ -35,8 +35,8 @@
             <nav id="rightlist">
                 <ul vertical-align="middle">
                     
-                    <li><a href="/about.html">Education</a></li>
-                    <li><a href="/projects.html">Games</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/projects.html">Portfolio</a></li>
                     <li><a href="/research.html">Research</a></li>
                     <li><a href="/publications.html">Publications</a></li>
                     <li><a href="/contact.html">Contact</a></li>

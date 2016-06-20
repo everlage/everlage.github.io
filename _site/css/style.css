@@ -14,12 +14,12 @@ body {
 	line-height:1.5em;
 }
 
-h6, h5, h4, h3, h2, h1 { font-weight: bold; margin: 1em 0;}
+h6, h5, h4, h3, h1 { font-weight: bold; margin: 1em 0;}
 h6 { font-size:1em; }
 h5 { font-size: 1.1em; }
 h4 { font-size: 1.15em; }
 h3 { font-size: 1.2em; }
-h2 { font-size: 1.5em; }
+h2 { font-size: 1.5em; text-align: center; color: white;}
 h1 { font-size: 2em; text-align: center;}
 
 em { font-style: italic; }
@@ -292,7 +292,7 @@ form.contact > div {
 .h1_container {
    
 
-    line-height:1em;
+    line-height:0em;
     background-color: #B0B0B0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -309,6 +309,42 @@ form.contact > div {
     -moz-border-radius: 5px; 
     -webkit-border-radius: 5px; 
     border-radius: 5px;
+}
+
+.h2_container_red {
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 3em;
+    background-color: #801010; /* red */
+
+    /* darker gray box shadow */
+    -o-box-shadow: inset 0px 0px 20px 3px #700505; /* opera */
+    -moz-box-shadow: inset 0px 0px 20px 3px #700505; /* firefox */
+    -webkit-box-shadow: inset 0px 0px 20px 3px; /* safari */
+    box-shadow: inset 0px 0px 20px 3px #700505;
+
+    /* border radius*/
+/*    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;*/
+}
+
+.h2_container_gray {
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 3em;
+    background-color: #101010;
+
+    /* border radius*/
+/*    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;*/
 }
 
 #EES_COVER {
